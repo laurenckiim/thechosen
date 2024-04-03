@@ -1,0 +1,538 @@
+:root {
+  --primary-black: #1c1c1c;
+  --primary-gold: #a1936e;
+  --primary-white: #fcfcfc;
+  --accent-gold: #bbb196;
+  --accent-light-gold: #d9d3c4;
+}
+
+/* font-family: "EB Garamond", serif; */
+
+body {
+  background-color: var(--primary-black);
+  overflow-x: hidden;
+}
+
+h2 {
+  background-color: var(--primary-black);
+  outline: none;
+}
+
+.navbar-toggler {
+  border: 1px solid #cfc8b5;
+}
+
+.navigation-bar {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  font-family: "EB Garamond", serif;
+  font-size: 19.5px;
+  font-weight: 400;
+}
+
+.btn-close {
+  display: none;
+}
+
+.home-link {
+  transition: all 200ms ease-in-out;
+}
+
+.chosen-about-link {
+  color: var(--accent-light-gold);
+  letter-spacing: 0.07em;
+  margin-right: 100px;
+}
+
+.chosen-about-link:hover {
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.chosen-seasons-link {
+  color: var(--accent-light-gold);
+  letter-spacing: 0.07em;
+  margin-right: 100px;
+}
+
+.chosen-seasons-link:hover {
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.chosen-watch-link {
+  color: var(--accent-light-gold);
+  letter-spacing: 0.07em;
+  margin-right: 50px;
+}
+
+.chosen-watch-link:hover {
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.image-background {
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.chosen-background-image {
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.overview-row {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.come-see-title {
+  width: 35%;
+}
+
+.overview-text {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 17.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 55px;
+  text-align: center;
+}
+
+.overview-button-row {
+  margin-top: 35px;
+}
+
+.chosen-overview-link {
+  background-color: #b5aa8d;
+  border: 0.5px solid #a1936e;
+  border-radius: 30px;
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 17.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.chosen-overview-link:hover {
+  background-color: var(--primary-gold);
+  border: 0.5px solid #a1936e;
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.about-background-row {
+  margin-top: 150px;
+}
+
+.about-background-image {
+  background-position: center;
+  height: 75vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.about-header-row {
+  margin-top: 15px;
+}
+
+.about-title {
+  width: 35%;
+}
+
+.about-text-row {
+  margin-top: 35px;
+}
+
+.about-text {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 45px;
+  text-align: left;
+  padding-left: 15px;
+  padding-right: 20px;
+  z-index: 1000;
+}
+
+.about-image {
+  object-fit: cover;
+  height: 75vh;
+  width: 100%;
+}
+
+.seasons-title-row {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.seasons-title {
+  width: 25%;
+}
+
+.accordion {
+  margin-bottom: 150px;
+}
+
+.accordion-item {
+  background-color: var(--primary-black);
+  border: none;
+  outline: none;
+  margin-top: 35px;
+}
+
+.accordion-header {
+  border: none;
+  outline: none;
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-black);
+  color: var(--accent-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 23.5px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  text-align: left;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-button:hover {
+  border: none;
+  color: var(--accent-light-gold);
+  cursor: pointer;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+  color: var(--accent-light-gold);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-black);
+  color: #fcfcfc;
+  font-family: "EB Garamond", serif;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-button.collapsed::after {
+  display: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.accordion-body-one {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+.accordion-header-one-row {
+  margin-top: 15px;
+}
+
+.accordion-header-one {
+  color: var(--accent-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 19.5px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 55px;
+  text-align: center;
+}
+
+.accordion-text-one {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+}
+
+.accordion-button-row-one {
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.watch-season-one-link {
+  background-color: #b5aa8d;
+  border: 0.5px solid #a1936e;
+  border-radius: 30px;
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.watch-season-one-link:hover {
+  background-color: var(--primary-gold);
+  border: 0.5px solid #a1936e;
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-body-two {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+.accordion-header-two-row {
+  margin-top: 15px;
+}
+
+.accordion-header-two {
+  color: var(--accent-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 19.5px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 55px;
+  text-align: center;
+}
+
+.accordion-text-two {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+}
+
+.accordion-button-row-two {
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.watch-season-two-link {
+  background-color: #b5aa8d;
+  border: 0.5px solid #a1936e;
+  border-radius: 30px;
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.watch-season-two-link:hover {
+  background-color: var(--primary-gold);
+  border: 0.5px solid #a1936e;
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-body-three {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+.accordion-header-three-row {
+  margin-top: 15px;
+}
+
+.accordion-header-three {
+  color: var(--accent-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 19.5px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 55px;
+  text-align: center;
+}
+
+.accordion-text-three {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+}
+
+.accordion-button-row-three {
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.watch-season-three-link {
+  background-color: #b5aa8d;
+  border: 0.5px solid #a1936e;
+  border-radius: 30px;
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.watch-season-three-link:hover {
+  background-color: var(--primary-gold);
+  border: 0.5px solid #a1936e;
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.accordion-body-four {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+.accordion-header-four-row {
+  margin-top: 15px;
+}
+
+.accordion-header-four {
+  color: var(--accent-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 19.5px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  line-height: 55px;
+  text-align: center;
+}
+
+.accordion-text-four {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+}
+
+.accordion-button-row-four {
+  margin-top: 35px;
+}
+
+.view-showtimes-link {
+  background-color: #b5aa8d;
+  border: 0.5px solid #a1936e;
+  border-radius: 30px;
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 15.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.view-showtimes-link:hover {
+  background-color: var(--primary-gold);
+  border: 0.5px solid #a1936e;
+  color: var(--primary-white);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.jesus-background-image {
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.quote-content-row {
+  margin-top: 25px;
+}
+
+.quote-text {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 35px;
+  text-align: center;
+}
+
+.three-fishes-image {
+  width: 10%;
+}
+
+.loavesfishes-content-row {
+  margin-top: 100px;
+}
+
+.loavesfishes-image {
+  width: 15%;
+}
+
+.production-content-row {
+  margin-top: 25px;
+}
+
+.production-text {
+  color: var(--primary-white);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-align: center;
+}
+
+.coded-content-row {
+  margin-top: 25px;
+}
+
+.coded-text {
+  color: var(--accent-light-gold);
+  font-family: "EB Garamond", serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 25px;
+  text-align: center;
+}

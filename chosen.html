@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The Chosen · A SheCodes Challenge Showcasing Binge-Worthy TV Shows"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/MainFavicon.png" rel="icon" />
+    <link href="src/chosen.css" rel="stylesheet" />
+    <script src="src/chosen.js"></script>
+    <title>Lauren Kim · Portfolio | The Chosen</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-none fixed-top navigation-bar">
+      <div class="container-fluid">
+        <a href="https://laurenkim.io/" class="navbar-brand home-link">
+          <img src="assets/MainLogo.png" alt="Lauren Kim Logo" width="75" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end space-evenly"
+          id="navbarNav"
+        >
+          <button type="button" class="btn-close" aria-label="Close"></button>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                href="chosen.html#about"
+                class="nav-link chosen-about-link"
+                title="The Chosen · About"
+              >
+                ABOUT
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="chosen.html#seasons"
+                class="nav-link chosen-seasons-link"
+                title="The Chosen · Seasons"
+              >
+                SEASONS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="chosen.html#watch"
+                class="nav-link chosen-watch-link"
+                title="The Chosen · Watch"
+              >
+                WATCH
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid p-0">
+      <div class="image-background">
+        <div class="image-wrap">
+          <img
+            src="assets/ChosenBackground.png"
+            class="img-fluid object-fit-cover position-absolute top-50 start-50 translate-middle chosen-background-image"
+            style="width: 100%"
+            id="chosenimg"
+          />
+        </div>
+        <div class="row">
+          <img
+            src="assets/ChosenLogo.png"
+            class="img-fluid position-absolute bottom-0 start-0 chosen-logo"
+            alt="The Chosen Logo"
+            style="width: 35%"
+          />
+        </div>
+        <div class="row">
+          <a href="chosen.html#watch" class="caret-link">
+            <button type="button" class="btn">
+              <img
+                src="assets/Caret.png"
+                class="img-fluid position-absolute bottom-0 start-50 translate-middle-x p-2 caret"
+                alt="Caret (Button)"
+                width="50"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row overview-row" id="watch">
+        <div class="col-md-12 overview-column d-flex justify-content-center">
+          <img src="assets/ComeSee.png" class="img-fluid come-see-title" />
+        </div>
+      </div>
+      <div class="row overview-text-row">
+        <div
+          class="col-md-12 overview-text-column d-flex justify-content-center"
+        >
+          <p class="overview-text">
+            The Chosen is a ground-breaking historical drama based on the life
+            of Jesus Christ,
+            <br />
+            seen through the eyes of those who knew him. Set against the
+            backdrop of Roman oppression in first-century Israel,
+            <br />
+            the seven-season show shares an authentic and intimate look at
+            Jesus' revolutionary life and teachings.
+            <br />
+            <br />
+            Created by Dallas Jenkins, The Chosen has reached over 197 countries
+            with approximately 590 million views.
+          </p>
+        </div>
+      </div>
+      <div class="row overview-button-row">
+        <div
+          class="col-md-12 overview-button-column d-flex justify-content-center"
+        >
+          <a
+            href="https://watch.thechosen.tv/"
+            class="btn chosen-overview-link"
+            role="button"
+          >
+            Experience The Chosen
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row about-background-row" id="about">
+        <div class="col-md-12 about-background-column">
+          <img
+            src="assets/AboutBackground.png"
+            class="img-fluid object-fit-cover position-absolute about-background-image"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row about-title-row">
+        <div class="col-md-6 about-title-column">
+          <div class="row about-header-row">
+            <div class="col-md-12 about-header-column">
+              <img src="assets/About.png" class="img-fluid about-title" />
+            </div>
+          </div>
+          <div class="row about-text-row">
+            <div class="col-md-12 about-text-column">
+              <p class="about-text">
+                THE CHOSEN is a Christian historical drama television series.
+                Created, directed, and co-written by Dallas Jenkins, it is the
+                first multi-season series about the life and ministry of Jesus
+                of Nazareth. Primarily set in Judea and Galilee in the 1st
+                Century, the series centers on Jesus and the different people
+                who met and followed or interacted within.
+                <br />
+                <br />
+                The Chosen is based on the true stories of the Gospels of Jesus
+                Christ. Some locations and timelines have been combined or
+                condensed with backstories, characters, or dialog added.
+                However, all the Bible and historical context as well as any
+                artistic imagination are designed to support the truth and
+                intention of the Scriptures.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 about-image-column d-flex justify-content-end">
+          <img
+            src="assets/AboutImage.png"
+            class="img-fluid about-image"
+            alt="Simon Peter · Shahar Isaac stars as Simon Peter in The Chosen"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row seasons-title-row" id="seasons">
+        <div
+          class="col-md-12 seasons-title-column d-flex justify-content-center"
+        >
+          <img src="assets/Seasons.png" class="img-fluid seasons-title" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="accordion" id="accordionChosen">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              SEASON 1
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionChosen"
+          >
+            <div class="accordion-body-one">
+              <div class="container">
+                <div class="row accordion-one-row">
+                  <div class="col-md-12 accordion-one-column">
+                    <div class="row accordion-header-one-row">
+                      <div class="col-md-12 accordion-header-one-column-row">
+                        <p class="accordion-header-one">
+                          GET USED TO DIFFERENT
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row accordion-text-one-row">
+                  <div class="col-md-12 accordion-text-one-column">
+                    <p class="accordion-text-one">
+                      "A charismatic fisherman drowning in debt. A troubled
+                      woman wrestling with real demons. A gifted publican
+                      ostracized by his family and his people. A religious
+                      leader struggling with his beliefs.
+                      <br />
+                      In this ground-breaking first season of The Chosen, see
+                      how Jesus reaches each of these and more as He works His
+                      first miracles and embarks on His ministry to change the
+                      world.
+                      <br />
+                      See Him through the eyes of those who met Him."
+                    </p>
+                  </div>
+                </div>
+                <div class="row accordion-button-row-one">
+                  <div
+                    class="col-md-12 accordion-button-column-one d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://watch.thechosen.tv/page/season%201"
+                      class="btn watch-season-one-link"
+                      role="button"
+                    >
+                      WATCH NOW
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              SEASON 2
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionChosen"
+          >
+            <div class="accordion-body-two">
+              <div class="container">
+                <div class="row accordion-two-row">
+                  <div class="col-md-12 accordion-two-column">
+                    <div class="row accordion-header-two-row">
+                      <div class="col-md-12 accordion-header-two-column">
+                        <p class="accordion-header-two">COME & SEE</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row accordion-text-two-row">
+                  <div class="col-md-12 accordion-text-two-column">
+                    <p class="accordion-text-two">
+                      "The word is spreading. Increased fame brings growing
+                      crowds, new disciples, and more miracles. It also brings
+                      trouble.
+                      <br />
+                      Mary is confronted with old demons. The tension between
+                      Simon and Matthew explodes. James and John battle their
+                      prejudices and fiery tempers.
+                      <br />
+                      But they all continue to passionately pursue the Man they
+                      don't always understand, but will always follow."
+                    </p>
+                  </div>
+                </div>
+                <div class="row accordion-button-row-two">
+                  <div
+                    class="col-md-12 accordion-button-column-two d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://watch.thechosen.tv/page/season%202"
+                      class="btn watch-season-two-link"
+                      role="button"
+                    >
+                      WATCH NOW
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              SEASON 3
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionChosen"
+          >
+            <div class="accordion-body-three">
+              <div class="container">
+                <div class="row accordion-three-row">
+                  <div class="col-md-12 accordion-three-column">
+                    <div class="row accordion-header-three-row">
+                      <div class="col-md-12 accordion-header-three-column">
+                        <p class="accordion-header-three">
+                          COME TO ME, ALL YOU WHO ARE WEARY & HEAVY LADEN
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row accordion-text-three-row">
+                  <div class="col-md-12 accordion-text-three-column">
+                    <p class="accordion-text-three">
+                      "Five Loaves. Two Fish. Impossible Math.
+                      <br />
+                      Jesus promises rest to His followers - but that doesn't
+                      mean there won't be trouble along the way.
+                      <br />
+                      Jesus delivers a sermon that will change the world. The
+                      result? Life gets harder for His followers. From marital
+                      crisis at home to a disastrous mission abroad,
+                      <br />
+                      their struggles leave them weary and weighed down until a
+                      little boy with five loaves and two fishes appears."
+                    </p>
+                  </div>
+                </div>
+                <div class="row accordion-button-row-three">
+                  <div
+                    class="col-md-12 accordion-button-column-three d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://watch.thechosen.tv/page/season%203"
+                      class="btn watch-season-three-link"
+                      role="button"
+                    >
+                      WATCH NOW
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+            >
+              SEASON 4
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionChosen"
+          >
+            <div class="accordion-body-four">
+              <div class="container">
+                <div class="row accordion-four-row">
+                  <div class="col-md-12 accordion-four-column">
+                    <div class="row accordion-header-four-row">
+                      <div class="col-md-12 accordion-header-four-column">
+                        <p class="accordion-header-four">
+                          THIS STARTS THE BEGINNING OF THE END
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row accordion-text-four-row">
+                  <div class="col-md-12 accordion-text-four-column">
+                    <p class="accordion-text-four">
+                      "Clashing kingdoms. Rival rulers. The enemies of Jesus
+                      close in while His followers struggle to keep up, leaving
+                      Him to carry the burdens alone.
+                      <br />
+                      Threatened by the reality of Jesus' growing influence,
+                      religious leaders do the unthinkable - ally with their
+                      Roman oppressors.
+                      <br />
+                      As the seeds of the betrayal are planted and opposition to
+                      Jesus' message turns violent, He's left with no
+                      alternative but to demand His followers RISE UP."
+                    </p>
+                  </div>
+                </div>
+                <div class="row accordion-button-row-four">
+                  <div
+                    class="col-md-12 accordion-button-column-four d-flex justify-content-center"
+                  >
+                    <a
+                      href="https://www.thechosenriseup.com/"
+                      class="btn view-showtimes-link"
+                      role="button"
+                    >
+                      VIEW SHOWTIMES
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="row jesus-background-row">
+        <div class="col-md-12 jesus-background-column">
+          <img
+            src="assets/JesusBackground.png"
+            class="img-fluid object-fit-cover position-absolute jesus-background-image"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row content-row">
+        <div class="col-md-5 empty-content-column"></div>
+        <div class="col-md-7 content-column">
+          <div class="row quote-content-row">
+            <div class="col-md-12 quote-content-column">
+              <p class="quote-text">
+                "The theme to need to surrender to the things that are out of
+                our control and to trust that there's a reason, that as a person
+                of faith, that God has a plan for everything that happens -
+                everything is allowed by His hand - and how we receive the
+                circumstances we find ourselves in, and how we embrace it or
+                fight it, determines our peace moving forward. So the more we
+                can surrender ourselves in life to God's will for us, whether it
+                be suffering, trial, joy or success - all of it - is defined by
+                Him, and given to us by Him but when we put our faith and trust
+                in Him, everything works out and we're supported through our
+                pain, through our suffering and in our joy."
+                <br />
+                Jonathan Roumie (who plays Jesus in The Chosen)
+              </p>
+            </div>
+          </div>
+          <div class="row footer-quote-content-row">
+            <div
+              class="col-md-12 footer-quote-content-column d-flex justify-content-center"
+            >
+              <img
+                src="assets/ThreeFishes.png"
+                class="img-fluid three-fishes-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row loavesfishes-content-row">
+          <div
+            class="col-md-12 loavesfishes-content-column d-flex justify-content-center"
+          >
+            <img
+              src="assets/LoavesFishes.png"
+              class="img-fluid loavesfishes-image"
+            />
+          </div>
+        </div>
+        <div class="row production-content-row">
+          <div
+            class="col-md-12 production-content-column d-flex justify-content-center"
+          >
+            <p class="production-text">
+              Loaves & Fishes Production is the parent company for The Chosen,
+              the first multi-season series about the life of Christ
+            </p>
+          </div>
+        </div>
+        <div class="row coded-content-row">
+          <div
+            class="col-md-12 coded-content-column d-flex justify-content-center"
+          >
+            <p class="coded-text">
+              This page was coded by Lauren Kim and is open-sourced
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
