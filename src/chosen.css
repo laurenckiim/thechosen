@@ -111,7 +111,7 @@ h2 {
 }
 
 .chosen-overview-link {
-  background-color: #b5aa8d;
+  background-color: #a1936e;
   border: 0.5px solid #a1936e;
   border-radius: 30px;
   color: var(--primary-white);
@@ -127,7 +127,7 @@ h2 {
 }
 
 .chosen-overview-link:hover {
-  background-color: var(--primary-gold);
+  background-color: #857957;
   border: 0.5px solid #a1936e;
   color: var(--primary-white);
   cursor: pointer;
